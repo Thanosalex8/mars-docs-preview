@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="el">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MARS — Δεδομένα και πρόσβαση (για IT) | M.A.R.S. Wiki</title>
+<meta name="description" content="Πού μένουν τα δεδομένα του MARS, ποιος βλέπει τι και τι στέλνεται στην υπηρεσία AI.">
+<link rel="canonical" href="https://mars.datalink.com.gr/docs/kb/technical-architecture.html">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="M.A.R.S. Wiki">
+<meta property="og:title" content="MARS — Δεδομένα και πρόσβαση (για IT)">
+<meta property="og:description" content="Πού μένουν τα δεδομένα του MARS, ποιος βλέπει τι και τι στέλνεται στην υπηρεσία AI.">
+<meta property="og:url" content="https://mars.datalink.com.gr/docs/kb/technical-architecture.html">
+<meta property="og:locale" content="el_GR">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "MARS — Δεδομένα και πρόσβαση (για IT)", "description": "Πού μένουν τα δεδομένα του MARS, ποιος βλέπει τι και τι στέλνεται στην υπηρεσία AI.", "inLanguage": "el", "dateModified": "2026-11-26", "author": {"@type": "Organization", "name": "Datalink"}, "publisher": {"@type": "Organization", "name": "Datalink"}, "mainEntityOfPage": "https://mars.datalink.com.gr/docs/kb/technical-architecture.html"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Αρχική", "item": "https://mars.datalink.com.gr/docs/index.html"}, {"@type": "ListItem", "position": 2, "name": "Γνωσιακή βάση", "item": "https://mars.datalink.com.gr/docs/kb/index.html"}, {"@type": "ListItem", "position": 3, "name": "MARS — Δεδομένα και πρόσβαση (για IT)", "item": "https://mars.datalink.com.gr/docs/kb/technical-architecture.html"}]}</script>
+<script>window.MARS={prefix:"../",ga:""};</script>
+</head>
+<body>
+<a class="skip" href="#main">Μετάβαση στο περιεχόμενο</a>
+<header class="topbar">
+  <button class="burger" aria-label="Μενού" onclick="document.body.classList.toggle('nav-open')">☰</button>
+  <a class="brand" href="../index.html"><span class="logo">M</span><span>M.A.R.S. <small>Wiki</small></span></a>
+  <nav class="tabs"><a class="tab" href="../index.html">Αρχική</a><a class="tab active" href="../kb/index.html">Γνωσιακή βάση</a><a class="tab" href="../manual/index.html">Εγχειρίδιο</a><a class="tab" href="../presentation/index.html">Παρουσίαση</a></nav>
+  <div class="search">
+    <input id="q" type="search" placeholder="Αναζήτηση στο MARS…" autocomplete="off" aria-label="Αναζήτηση">
+    <kbd>⌘K</kbd>
+    <div id="results" class="results" role="listbox"></div>
+  </div>
+</header>
+<div class="layout has-sidebar has-toc">
+<aside class="sidebar"><a class="side-home" href="../kb/index.html">📚 Γνωσιακή βάση</a><details><summary>🚀 Πρώτα βήματα</summary><a class="" href="../kb/getting-started.html">Ξεκινώντας με το MARS</a><a class="" href="../kb/concepts.html">Βασικές έννοιες: διαστάσεις, αθροιστές, περίοδοι, φίλτρα</a><a class="" href="../kb/glossary.html">Γλωσσάρι του MARS</a></details><details><summary>🛠️ Φτιάχνω αναφορές</summary><a class="" href="../kb/create-report.html">Δημιουργία αναφοράς</a><a class="" href="../kb/quick-options.html">Γρήγορες επιλογές</a><a class="" href="../kb/dimensions.html">Διαστάσεις</a><a class="" href="../kb/measures.html">Αθροιστές</a><a class="" href="../kb/date-periods.html">Περίοδοι και δυναμικά χρονικά διαστήματα</a><a class="" href="../kb/reference-date.html">Οριακή ημερομηνία: η αναφορά όπως θα ήταν μια άλλη μέρα</a><a class="" href="../kb/column-filters.html">Φίλτρα ανά στήλη</a></details><details><summary>📈 Προχωρημένη ανάλυση</summary><a class="" href="../kb/special-measures-rank-pareto.html">Ειδικοί αθροιστές: Θέση, Ποσοστό, Pareto</a><a class="" href="../kb/calculated-columns.html">Υπολογισμένες στήλες</a><a class="" href="../kb/custom-measures.html">Εταιρικοί αθροιστές</a><a class="" href="../kb/custom-dimensions.html">Εταιρικές διαστάσεις</a><a class="" href="../kb/ai-assistant.html">AI Assistant: ρωτήστε την αναφορά σας</a></details><details><summary>📊 Δουλεύω με τα αποτελέσματα</summary><a class="" href="../kb/numeric-filters-sorting.html">Αριθμητικά φίλτρα και ταξινόμηση</a><a class="" href="../kb/drill-down.html">Drill-down: από τη σύνοψη στη λεπτομέρεια</a><a class="" href="../kb/export-print.html">Εξαγωγή και εκτύπωση</a><a class="" href="../kb/bookmarks-mobile.html">Σύνδεσμοι, σελιδοδείκτες και κινητό</a></details><details><summary>🗂️ Οργάνωση και ιστορικό</summary><a class="" href="../kb/system-reports.html">Αναφορές Συστήματος</a><a class="" href="../kb/archiving-categories.html">Αρχειοθέτηση και κατηγορίες αναφορών</a><a class="" href="../kb/historical-reports.html">Ιστορικές αναφορές</a></details><details><summary>💡 Σενάρια και απαντήσεις</summary><a class="" href="../kb/use-cases.html">Έτοιμα σενάρια: 10 αναφορές βήμα βήμα</a><a class="" href="../kb/faq.html">Συχνές ερωτήσεις</a></details><details><summary>🔐 Για διαχειριστές</summary><a class="" href="../kb/roles.html">Ρόλοι και δικαιώματα</a><a class="" href="../kb/admin-guide.html">Οδηγός διαχειριστή</a></details><details open><summary>🧩 Για συνεργάτες και IT</summary><a class="current" href="../kb/technical-architecture.html">MARS — Δεδομένα και πρόσβαση (για IT)</a></details></aside>
+<main id="main"><nav class="crumbs" aria-label="Διαδρομή"><a href="../index.html">Αρχική</a> <span>›</span> <a href="../kb/index.html">Γνωσιακή βάση</a></nav><article class="doc"><h1>MARS — Δεδομένα και πρόσβαση (για IT)</h1><div class="meta"><span class="lozenge">Τεχνικό</span><span>⏱ 2 λεπτά ανάγνωση</span><span>Κεφάλαιο 27 από 27</span><span>Ενημέρωση 26/11/2026</span></div><p class="lead">Πού μένουν τα δεδομένα του MARS, ποιος βλέπει τι και τι στέλνεται στην υπηρεσία AI.</p><h2 id="s1">Πού μένουν τα δεδομένα<a class="anchor" href="#s1" aria-label="Σύνδεσμος ενότητας">#</a></h2>
+<p>Το MARS χρησιμοποιεί δύο βάσεις.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Βάση</th>
+<th>Τι περιέχει</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Βάση SoftOne του πελάτη</strong></td>
+<td>Τα δεδομένα του ERP, τα αποτελέσματα των αναφορών και οι βοηθητικοί πίνακες του MARS</td>
+</tr>
+<tr>
+<td><strong>Βάση της εφαρμογής MARS</strong></td>
+<td>Χρήστες και ρόλοι, εγκαταστάσεις, δικαιώματα, Groups, ορισμοί αναφορών, κατάλογοι διαστάσεων, αθροιστών και περιόδων, αντίγραφο αποτελεσμάτων για την οθόνη και τον AI Assistant, ρυθμίσεις και ιστορικό του AI</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Η αναφορά εκτελείται πάνω στα δεδομένα της βάσης SoftOne του πελάτη.</li>
+<li>Στις <strong>Αναφορές Αρχείου</strong>, από τη χθεσινή ημέρα και πριν μένουν μόνο τα σύνολα των εκτελέσεων.</li>
+</ul>
+<h2 id="s2">Ποιος βλέπει τι<a class="anchor" href="#s2" aria-label="Σύνδεσμος ενότητας">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Τι περιορίζεται</th>
+<th>Πώς</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Εγκαταστάσεις και εταιρείες</strong></td>
+<td>Ο διαχειριστής ορίζει σε ποιες έχει πρόσβαση ο κάθε χρήστης</td>
+</tr>
+<tr>
+<td><strong>Αθροιστές</strong></td>
+<td>Ο κάθε χρήστης έχει λίστα επιτρεπόμενων αθροιστών. Μια αναφορά εμφανίζεται μόνο αν του επιτρέπονται όλοι οι αθροιστές της</td>
+</tr>
+<tr>
+<td><strong>Αυτόματα φίλτρα</strong></td>
+<td>Σε κάθε αθροιστή μπορεί να οριστεί φίλτρο για τον χρήστη. Εφαρμόζεται αυτόματα</td>
+</tr>
+<tr>
+<td><strong>Αναφορές Αρχείου</strong></td>
+<td>Κάθε χρήστης βλέπει μόνο τις δικές του εκτελέσεις</td>
+</tr>
+<tr>
+<td><strong>Σύνδεσμος σε συνάδελφο</strong></td>
+<td>Ισχύουν τα δικαιώματα και τα φίλτρα εκείνου που τον ανοίγει</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="s3">AI Assistant και δεδομένα<a class="anchor" href="#s3" aria-label="Σύνδεσμος ενότητας">#</a></h2>
+<ul>
+<li>Ο βοηθός δουλεύει πάνω στα αποτελέσματα της αναφοράς που είναι ανοιχτή.</li>
+<li>Το μοντέλο AI <strong>δεν γράφει SQL</strong>. Προτείνει ένα δομημένο ερώτημα (στήλες, όριο, ταξινόμηση, συνθήκες), το οποίο ελέγχεται ως προς τα επιτρεπόμενα πεδία και τελεστές πριν εφαρμοστεί στα αποθηκευμένα αποτελέσματα.</li>
+<li>Χρησιμοποιείται εξωτερική υπηρεσία AI. Σήμερα στέλνονται σε αυτήν οι γραμμές του αποτελέσματος που χρειάζεται η ερώτηση, με τα ονόματα και τις τιμές τους.</li>
+<li><strong>Ανωνυμοποίηση (έρχεται σύντομα):</strong> τα ονόματα διαστάσεων, τιμών και αθροιστών θα αντικαθίστανται με κωδικούς πριν σταλούν. Τα ποσά και οι ημερομηνίες θα στέλνονται όπως είναι. Ο χρήστης θα βλέπει στην απάντηση τα πραγματικά ονόματα.</li>
+<li>Τα βήματα κάθε συνομιλίας καταγράφονται.</li>
+</ul><section class="related"><h2>Σχετικά άρθρα</h2><div class="cards"><a class="card" href="../kb/roles.html"><div class="card-sec">🔐 Για διαχειριστές</div><div class="card-title">Ρόλοι και δικαιώματα</div><div class="card-desc">Στο MARS, το τι βλέπει ο καθένας δεν εξαρτάται μόνο από τον ρόλο του. Εξαρτάται κυρίως από τους αθροιστές που του έχουν δοθεί και τα αυτόματα φίλτρα που τους συνοδεύουν. Έτσι ο ίδιος ρόλος δίνει «πωλητή», «διευθυντή» ή «οικονομικό».</div></a><a class="card" href="../kb/ai-assistant.html"><div class="card-sec">📈 Προχωρημένη ανάλυση</div><div class="card-title">AI Assistant: ρωτήστε την αναφορά σας</div><div class="card-desc">Μέσα σε κάθε αναφορά υπάρχει βοηθός AI. Του κάνετε ερωτήσεις σε απλά ελληνικά και απαντά με κείμενο, πίνακα ή γράφημα. Μπορεί και να σας φτιάξει νέα αναφορά.</div></a><a class="card" href="../kb/admin-guide.html"><div class="card-sec">🔐 Για διαχειριστές</div><div class="card-title">Οδηγός διαχειριστή</div><div class="card-desc">Για τον διαχειριστή του MARS: εγκαταστάσεις, χρήστες, δικαιώματα, αυτόματα φίλτρα (data fencing), Groups διαστάσεων, εταιρικοί αθροιστές, Αναφορές Συστήματος και ρυθμίσεις AI.</div></a></div></section><div class="helpful">Σας βοήθησε αυτό το άρθρο; <button class="btn" data-h="yes">👍 Ναι</button><button class="btn" data-h="no">👎 Όχι</button></div><nav class="prevnext"><a class="pn prev" href="../kb/admin-guide.html"><small>← Προηγούμενο</small>Οδηγός διαχειριστή</a><span></span></nav></article></main>
+<aside class="toc"><div class="toc-title">Σε αυτή τη σελίδα</div><a class="toc-l2" href="#s1">Πού μένουν τα δεδομένα</a><a class="toc-l2" href="#s2">Ποιος βλέπει τι</a><a class="toc-l2" href="#s3">AI Assistant και δεδομένα</a></aside>
+</div>
+<footer class="footer"><div>© 2026 Datalink · M.A.R.S. (My Advanced Reporting System)</div>
+<div><a href="#" onclick="MARSConsent.reset();return false">Ρυθμίσεις cookies</a></div></footer>
+<div id="consent" class="consent" hidden>
+  <div><strong>Cookies</strong><p>Χρησιμοποιούμε Google Analytics για να βλέπουμε ποια άρθρα βοηθούν. Φορτώνεται μόνο με τη συγκατάθεσή σας.</p></div>
+  <div class="consent-btns"><button class="btn" data-c="no">Απόρριψη</button><button class="btn btn-primary" data-c="yes">Αποδοχή</button></div>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>

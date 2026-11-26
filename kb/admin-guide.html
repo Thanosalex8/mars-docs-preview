@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="el">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Οδηγός διαχειριστή | M.A.R.S. Wiki</title>
+<meta name="description" content="Για τον διαχειριστή του MARS: εγκαταστάσεις, χρήστες, δικαιώματα, αυτόματα φίλτρα (data fencing), Groups διαστάσεων, εταιρικοί αθροιστές, Αναφορές Συστήματος και ρυθμίσεις AI.">
+<link rel="canonical" href="https://mars.datalink.com.gr/docs/kb/admin-guide.html">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="M.A.R.S. Wiki">
+<meta property="og:title" content="Οδηγός διαχειριστή">
+<meta property="og:description" content="Για τον διαχειριστή του MARS: εγκαταστάσεις, χρήστες, δικαιώματα, αυτόματα φίλτρα (data fencing), Groups διαστάσεων, εταιρικοί αθροιστές, Αναφορές Συστήματος και ρυθμίσεις AI.">
+<meta property="og:url" content="https://mars.datalink.com.gr/docs/kb/admin-guide.html">
+<meta property="og:locale" content="el_GR">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Οδηγός διαχειριστή", "description": "Για τον διαχειριστή του MARS: εγκαταστάσεις, χρήστες, δικαιώματα, αυτόματα φίλτρα (data fencing), Groups διαστάσεων, εταιρικοί αθροιστές, Αναφορές Συστήματος και ρυθμίσεις AI.", "inLanguage": "el", "dateModified": "2026-11-26", "author": {"@type": "Organization", "name": "Datalink"}, "publisher": {"@type": "Organization", "name": "Datalink"}, "mainEntityOfPage": "https://mars.datalink.com.gr/docs/kb/admin-guide.html"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Αρχική", "item": "https://mars.datalink.com.gr/docs/index.html"}, {"@type": "ListItem", "position": 2, "name": "Γνωσιακή βάση", "item": "https://mars.datalink.com.gr/docs/kb/index.html"}, {"@type": "ListItem", "position": 3, "name": "Οδηγός διαχειριστή", "item": "https://mars.datalink.com.gr/docs/kb/admin-guide.html"}]}</script>
+<script>window.MARS={prefix:"../",ga:""};</script>
+</head>
+<body>
+<a class="skip" href="#main">Μετάβαση στο περιεχόμενο</a>
+<header class="topbar">
+  <button class="burger" aria-label="Μενού" onclick="document.body.classList.toggle('nav-open')">☰</button>
+  <a class="brand" href="../index.html"><span class="logo">M</span><span>M.A.R.S. <small>Wiki</small></span></a>
+  <nav class="tabs"><a class="tab" href="../index.html">Αρχική</a><a class="tab active" href="../kb/index.html">Γνωσιακή βάση</a><a class="tab" href="../manual/index.html">Εγχειρίδιο</a><a class="tab" href="../presentation/index.html">Παρουσίαση</a></nav>
+  <div class="search">
+    <input id="q" type="search" placeholder="Αναζήτηση στο MARS…" autocomplete="off" aria-label="Αναζήτηση">
+    <kbd>⌘K</kbd>
+    <div id="results" class="results" role="listbox"></div>
+  </div>
+</header>
+<div class="layout has-sidebar has-toc">
+<aside class="sidebar"><a class="side-home" href="../kb/index.html">📚 Γνωσιακή βάση</a><details><summary>🚀 Πρώτα βήματα</summary><a class="" href="../kb/getting-started.html">Ξεκινώντας με το MARS</a><a class="" href="../kb/concepts.html">Βασικές έννοιες: διαστάσεις, αθροιστές, περίοδοι, φίλτρα</a><a class="" href="../kb/glossary.html">Γλωσσάρι του MARS</a></details><details><summary>🛠️ Φτιάχνω αναφορές</summary><a class="" href="../kb/create-report.html">Δημιουργία αναφοράς</a><a class="" href="../kb/quick-options.html">Γρήγορες επιλογές</a><a class="" href="../kb/dimensions.html">Διαστάσεις</a><a class="" href="../kb/measures.html">Αθροιστές</a><a class="" href="../kb/date-periods.html">Περίοδοι και δυναμικά χρονικά διαστήματα</a><a class="" href="../kb/reference-date.html">Οριακή ημερομηνία: η αναφορά όπως θα ήταν μια άλλη μέρα</a><a class="" href="../kb/column-filters.html">Φίλτρα ανά στήλη</a></details><details><summary>📈 Προχωρημένη ανάλυση</summary><a class="" href="../kb/special-measures-rank-pareto.html">Ειδικοί αθροιστές: Θέση, Ποσοστό, Pareto</a><a class="" href="../kb/calculated-columns.html">Υπολογισμένες στήλες</a><a class="" href="../kb/custom-measures.html">Εταιρικοί αθροιστές</a><a class="" href="../kb/custom-dimensions.html">Εταιρικές διαστάσεις</a><a class="" href="../kb/ai-assistant.html">AI Assistant: ρωτήστε την αναφορά σας</a></details><details><summary>📊 Δουλεύω με τα αποτελέσματα</summary><a class="" href="../kb/numeric-filters-sorting.html">Αριθμητικά φίλτρα και ταξινόμηση</a><a class="" href="../kb/drill-down.html">Drill-down: από τη σύνοψη στη λεπτομέρεια</a><a class="" href="../kb/export-print.html">Εξαγωγή και εκτύπωση</a><a class="" href="../kb/bookmarks-mobile.html">Σύνδεσμοι, σελιδοδείκτες και κινητό</a></details><details><summary>🗂️ Οργάνωση και ιστορικό</summary><a class="" href="../kb/system-reports.html">Αναφορές Συστήματος</a><a class="" href="../kb/archiving-categories.html">Αρχειοθέτηση και κατηγορίες αναφορών</a><a class="" href="../kb/historical-reports.html">Ιστορικές αναφορές</a></details><details><summary>💡 Σενάρια και απαντήσεις</summary><a class="" href="../kb/use-cases.html">Έτοιμα σενάρια: 10 αναφορές βήμα βήμα</a><a class="" href="../kb/faq.html">Συχνές ερωτήσεις</a></details><details open><summary>🔐 Για διαχειριστές</summary><a class="" href="../kb/roles.html">Ρόλοι και δικαιώματα</a><a class="current" href="../kb/admin-guide.html">Οδηγός διαχειριστή</a></details><details><summary>🧩 Για συνεργάτες και IT</summary><a class="" href="../kb/technical-architecture.html">MARS — Δεδομένα και πρόσβαση (για IT)</a></details></aside>
+<main id="main"><nav class="crumbs" aria-label="Διαδρομή"><a href="../index.html">Αρχική</a> <span>›</span> <a href="../kb/index.html">Γνωσιακή βάση</a></nav><article class="doc"><h1>Οδηγός διαχειριστή</h1><div class="meta"><span class="lozenge">Διαχειριστές</span><span>⏱ 5 λεπτά ανάγνωση</span><span>Κεφάλαιο 26 από 27</span><span>Ενημέρωση 26/11/2026</span></div><p class="lead">Για τον διαχειριστή του MARS: εγκαταστάσεις, χρήστες, δικαιώματα, αυτόματα φίλτρα (data fencing), Groups διαστάσεων, εταιρικοί αθροιστές, Αναφορές Συστήματος και ρυθμίσεις AI.</p><h2 id="s1">Τι κάνει<a class="anchor" href="#s1" aria-label="Σύνδεσμος ενότητας">#</a></h2>
+<p>Ο διαχειριστής (ρόλος SYSTEM ADMIN) βλέπει στο πάνω μενού το <strong>Διαχείριση</strong> με τις επιλογές <strong>Εγκαταστάσεις</strong>, <strong>Ρόλοι</strong>, <strong>Χρήστες</strong>, <strong>Διαστάσεις</strong>, <strong>Ημερομηνίες</strong>, <strong>Ρυθμίσεις AI</strong>, <strong>Agents</strong>, <strong>Workflow</strong>. Όταν έχει επιλέξει εγκατάσταση, βλέπει και τις <strong>Ρυθμίσεις Group</strong>.</p>
+<h2 id="s2">1. Εγκαταστάσεις<a class="anchor" href="#s2" aria-label="Σύνδεσμος ενότητας">#</a></h2>
+<p>Κάθε εγκατάσταση είναι μία βάση SoftOne συνδεδεμένη με το MARS.</p>
+<ol>
+<li><strong>Διαχείριση → Εγκαταστάσεις</strong>. Η λίστα δείχνει Εγκατάσταση, Serial Number, Ενεργό.</li>
+<li>Για νέα ή υπάρχουσα εγκατάσταση, συμπληρώστε: <strong>Επωνυμία</strong>, <strong>ΑΦΜ</strong>, <strong>Serial Number</strong>, <strong>Όνομα χρήστη</strong>, <strong>Κωδικός</strong>, <strong>App Id</strong>, <strong>Url</strong>, <strong>Ενεργή</strong>.</li>
+<li>Στον πίνακα από κάτω προσθέστε τις εταιρείες της εγκατάστασης (<strong>id Εταιρείας</strong>, <strong>Περιγραφή</strong>).</li>
+<li>
+<p>Πατήστε <strong>Αποθήκευση</strong> (ή <strong>Ενημέρωση</strong>).</p>
+<figure class="shot"><img src="../media/shots/S36.png" alt="Φόρμα εγκατάστασης (στοιχεία σύνδεσης θολωμένα)" loading="lazy"><figcaption>Φόρμα εγκατάστασης (στοιχεία σύνδεσης θολωμένα)</figcaption></figure>
+</li>
+<li>
+<p>Σε νέα εγκατάσταση, πατήστε <strong>Δημιουργία πινάκων</strong>. Έτσι στήνονται στη βάση του πελάτη όσα χρειάζεται το MARS.</p>
+</li>
+</ol>
+<p>Τα στοιχεία σύνδεσης με το SoftOne τα δίνει ο πελάτης (ο υπεύθυνος μηχανογράφησής του).</p>
+<h2 id="s3">2. Χρήστες<a class="anchor" href="#s3" aria-label="Σύνδεσμος ενότητας">#</a></h2>
+<ol>
+<li><strong>Διαχείριση → Χρήστες</strong> → νέος χρήστης: <strong>Email</strong>, <strong>Επίθετο</strong>, <strong>Όνομα</strong>, <strong>Κωδικός</strong>, <strong>Επαλήθευση κωδικού</strong>, <strong>Ρόλος</strong>. Πατήστε <strong>Αποθήκευση</strong>.</li>
+<li>Ανοίξτε τον χρήστη (<strong>Διαχείριση χρήστη</strong>). Εκεί αλλάζετε <strong>Όνομα</strong>, <strong>Επώνυμο</strong>, <strong>Ρόλος</strong> και <strong>Ενεργός</strong>. Το «Ενεργός» το βγάζετε για να κλείσετε έναν λογαριασμό χωρίς να τον σβήσετε.</li>
+<li>Στον πίνακα των εγκαταστάσεων, προσθέστε μια γραμμή για κάθε εγκατάσταση που θα βλέπει ο χρήστης:
+   - <strong>Εγκατάσταση</strong>
+   - <strong>Χρήστης Softone</strong>: ο αντίστοιχος χρήστης στο SoftOne.
+   - <strong>Πρόσβαση σε εταιρείες</strong>: ποιες εταιρείες της εγκατάστασης βλέπει.
+   - <strong>Default εταιρείες</strong>: ποιες είναι προεπιλεγμένες.</li>
+<li>
+<p>Πατήστε <strong>Ενημέρωση</strong>.</p>
+<figure class="shot"><img src="../media/shots/S37.png" alt="«Διαχείριση χρήστη» με τον πίνακα εγκαταστάσεων" loading="lazy"><figcaption>«Διαχείριση χρήστη» με τον πίνακα εγκαταστάσεων</figcaption></figure>
+</li>
+</ol>
+<h2 id="s4">3. Δικαιώματα αθροιστών και αυτόματα φίλτρα (data fencing)<a class="anchor" href="#s4" aria-label="Σύνδεσμος ενότητας">#</a></h2>
+<p>Εδώ ορίζετε <strong>τι νούμερα βλέπει ο καθένας</strong>. Αυτό κάνει ένα άτομο «πωλητή», «υπεύθυνο περιοχής» ή «διευθυντή».</p>
+<ol>
+<li>Στη <strong>Διαχείριση χρήστη</strong>, στη γραμμή της εγκατάστασης, πατήστε το εικονίδιο με το βέλος. Εκεί ορίζετε ποιους αθροιστές έχει δικαίωμα να βλέπει ο χρήστης σε αυτή την εγκατάσταση.</li>
+<li>Ανοίγει ο πίνακας με στήλες <strong>Αθροιστής</strong>, <strong>Φίλτρο</strong>, <strong>Τιμές Φίλτρου</strong>.</li>
+<li>
+<p>Σε κάθε γραμμή:
+   - Πατήστε στο <strong>Αθροιστής</strong> και διαλέξτε από το <strong>Επιλέξτε Αθροιστή</strong> (μπορείτε να επιλέξετε πολλούς). Πατήστε <strong>Αποδοχή</strong>.</p>
+<figure class="shot"><img src="../media/shots/S38.png" alt="Παράθυρο «Επιλέξτε Αθροιστή»: οι αθροιστές που θα βλέπει ο χρήστης" loading="lazy"><figcaption>Παράθυρο «Επιλέξτε Αθροιστή»: οι αθροιστές που θα βλέπει ο χρήστης</figcaption></figure>
+</li>
+</ol>
+<ul>
+<li>Αν ο χρήστης πρέπει να βλέπει τους αθροιστές αυτούς <strong>περιορισμένους</strong>, πατήστε στο <strong>Φίλτρο</strong> και διαλέξτε διάσταση (π.χ. πωλητής, περιοχή, αποθήκη).</li>
+<li>Πατήστε στο <strong>Τιμές Φίλτρου</strong> και τσεκάρετε τις τιμές (π.χ. οι τρεις πωλητές της ομάδας). Πατήστε <strong>Αποδοχή</strong>.
+4. Πατήστε <strong>Ενημέρωση</strong>.</li>
+</ul>
+<p><strong>Τι πετυχαίνετε:</strong></p>
+<ul>
+<li>Ο χρήστης βλέπει στη λίστα <strong>μόνο</strong> αναφορές των οποίων <strong>όλους</strong> τους αθροιστές έχει δικαίωμα να δει.</li>
+<li>Όταν διαλέγει αθροιστή, βλέπει μόνο τους επιτρεπόμενους.</li>
+<li>Όταν τρέχει αναφορά, το φίλτρο του αθροιστή μπαίνει <strong>αυτόματα</strong> στις στήλες αυτού του αθροιστή. Ο χρήστης δεν μπορεί να το αφαιρέσει.</li>
+</ul>
+<p><strong>Παραδείγματα:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Άτομο</th>
+<th>Αθροιστές</th>
+<th>Φίλτρο</th>
+<th>Τιμές</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Πωλητής</td>
+<td>Αθροιστές πωλήσεων</td>
+<td>Πωλητής</td>
+<td>Ο ίδιος</td>
+</tr>
+<tr>
+<td>Υπεύθυνος ομάδας</td>
+<td>Αθροιστές πωλήσεων</td>
+<td>Πωλητής</td>
+<td>Οι πωλητές της ομάδας</td>
+</tr>
+<tr>
+<td>Υπεύθυνος καταστήματος</td>
+<td>Αθροιστές πωλήσεων και αποθήκης</td>
+<td>Αποθήκη</td>
+<td>Η αποθήκη του καταστήματος</td>
+</tr>
+<tr>
+<td>Διευθυντής πωλήσεων</td>
+<td>Όλοι οι αθροιστές πωλήσεων</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<div class="panel panel-note"><span class="panel-icon">ℹ️</span><div><p>Ο <strong>πωλητής</strong> είναι κανονικός χρήστης: του δίνετε συγκεκριμένους αθροιστές, με φίλτρα που τον περιορίζουν <strong>μόνο στις δικές του πωλήσεις</strong>.</p></div></div>
+<h2 id="s5">4. Groups διαστάσεων και φίλτρων<a class="anchor" href="#s5" aria-label="Σύνδεσμος ενότητας">#</a></h2>
+<p>Τα Groups είναι οι σύντομες λίστες που εμφανίζονται στις <strong>Γρήγορες επιλογές</strong> (1η ΔΙΑΣΤΑΣΗ, 2η ΔΙΑΣΤΑΣΗ, ΦΙΛΤΡΟ). Έτσι ο χρήστης αλλάζει διάσταση με ένα κλικ, χωρίς να ψάχνει σε όλο τον κατάλογο.</p>
+<ol>
+<li><strong>Ρυθμίσεις Group</strong> (στο πάνω μενού). Η λίστα <strong>Group Διαστάσεων/Φίλτρου</strong> δείχνει Id, Κωδικός, Περιγραφή, Εταιρείες, Sn, Σχετικό Group, Περιγραφή Σχετικού Group.</li>
+<li>Νέο ή επεξεργασία: συμπληρώστε <strong>Κωδικός</strong> και <strong>Περιγραφή</strong>. Το <strong>Serial Number</strong> φαίνεται για ενημέρωση.</li>
+<li>Στον πίνακα προσθέστε διαστάσεις (<strong>Διάσταση</strong>, <strong>Περιγραφή Διάστασης</strong>, <strong>Κατηγορία</strong>). Η <strong>Κατηγορία</strong> ορίζει πού εμφανίζεται η γραμμή: <strong>1</strong> = μόνο στο Group διαστάσεων, <strong>2</strong> = μόνο στο Group φίλτρων, <strong>3</strong> = και στα δύο.</li>
+<li>
+<p>Πατήστε <strong>Αποθήκευση</strong>.</p>
+<figure class="shot"><img src="../media/shots/S40.png" alt="Group Διάστασης: λίστα (πάνω) και επεξεργασία (κάτω)" loading="lazy"><figcaption>Group Διάστασης: λίστα (πάνω) και επεξεργασία (κάτω)</figcaption></figure>
+</li>
+<li>
+<p>Στις ρυθμίσεις μιας αναφοράς, στην ενότητα <strong>Γρήγορες Επιλογές</strong>, ορίστε <strong>Group 1ης Διάστασης</strong>, <strong>Group 2ης Διάστασης</strong> και <strong>Group Φίλτρου</strong>.</p>
+</li>
+</ol>
+<h2 id="s6">5. Αναφορές Συστήματος<a class="anchor" href="#s6" aria-label="Σύνδεσμος ενότητας">#</a></h2>
+<p>Ο διαχειριστής είναι ο μόνος που αλλάζει τις Αναφορές Συστήματος. Ανοίγει τις ρυθμίσεις, κάνει τις αλλαγές και πατά <strong>Αποθήκευση αλλαγών</strong>. Οι αλλαγές ισχύουν για όλους, <strong>εκτός</strong> από αναφορές χρήστη που έχουν ήδη αντιγραφεί από αυτήν.</p>
+<h2 id="s7">6. Διαστάσεις, περίοδοι και εταιρικοί αθροιστές<a class="anchor" href="#s7" aria-label="Σύνδεσμος ενότητας">#</a></h2>
+<ul>
+<li><strong>Διαχείριση → Διαστάσεις</strong> και <strong>Διαχείριση → Ημερομηνίες</strong>: βλέπετε τον κατάλογο και πατάτε <strong>Συγχρονισμός με Datalink Demo</strong> για να φέρετε την τελευταία έκδοση του κεντρικού καταλόγου.</li>
+<li><strong>Εταιρικοί αθροιστές και διαστάσεις</strong> δημιουργούνται εκτός οθόνης, απευθείας στη βάση. Συνδέονται με τη συγκεκριμένη εγκατάσταση του πελάτη και δεν επηρεάζουν άλλες εγκαταστάσεις. Αφού δημιουργηθούν, δώστε τους στους χρήστες από τα δικαιώματα αθροιστών (ενότητα 3). Για νέο εταιρικό αθροιστή ή διάσταση στείλτε αίτημα στη Datalink.</li>
+</ul>
+<h2 id="s8">7. Προβολή ως άλλος χρήστης<a class="anchor" href="#s8" aria-label="Σύνδεσμος ενότητας">#</a></h2>
+<p>Πάνω δεξιά, η λίστα <strong>-- Εγώ --</strong> σας δείχνει τη λίστα αναφορών όπως τη βλέπει κάποιος άλλος χρήστης της εγκατάστασης. Χρήσιμο για να ελέγξετε τα δικαιώματα που ορίσατε.</p>
+<figure class="shot"><img src="../media/shots/S41.png" alt="Ανοιχτή λίστα «-- Εγώ --» (προβολή ως άλλος χρήστης)" loading="lazy"><figcaption>Ανοιχτή λίστα «-- Εγώ --» (προβολή ως άλλος χρήστης)</figcaption></figure>
+<h2 id="s9">8. Ρυθμίσεις AI<a class="anchor" href="#s9" aria-label="Σύνδεσμος ενότητας">#</a></h2>
+<ul>
+<li><strong>Ρυθμίσεις AI</strong>: οι οδηγίες (prompts) που καθοδηγούν τον βοηθό.</li>
+<li><strong>Agents</strong> και <strong>Workflow</strong>: προχωρημένες ρυθμίσεις για το πώς συνεργάζονται τα βήματα του βοηθού. Αλλάξτε τες μόνο με οδηγίες της Datalink.</li>
+</ul>
+<h2 id="s10">Συμβουλές και συχνά λάθη<a class="anchor" href="#s10" aria-label="Σύνδεσμος ενότητας">#</a></h2>
+<ul>
+<li><strong>Ο χρήστης δεν βλέπει καμία αναφορά:</strong> δεν έχει γραμμή εγκατάστασης ή δεν έχει δικαίωμα σε κανέναν αθροιστή.</li>
+<li><strong>Ο χρήστης δεν βλέπει μια συγκεκριμένη αναφορά:</strong> του λείπει δικαίωμα σε έναν από τους αθροιστές της.</li>
+<li><strong>Ελέγξτε πάντα με «-- Εγώ --»</strong> μετά από αλλαγή δικαιωμάτων.</li>
+</ul><section class="related"><h2>Σχετικά άρθρα</h2><div class="cards"><a class="card" href="../kb/roles.html"><div class="card-sec">🔐 Για διαχειριστές</div><div class="card-title">Ρόλοι και δικαιώματα</div><div class="card-desc">Στο MARS, το τι βλέπει ο καθένας δεν εξαρτάται μόνο από τον ρόλο του. Εξαρτάται κυρίως από τους αθροιστές που του έχουν δοθεί και τα αυτόματα φίλτρα που τους συνοδεύουν. Έτσι ο ίδιος ρόλος δίνει «πωλητή», «διευθυντή» ή «οικονομικό».</div></a><a class="card" href="../kb/quick-options.html"><div class="card-sec">🛠️ Φτιάχνω αναφορές</div><div class="card-title">Γρήγορες επιλογές</div><div class="card-desc">Τρέξτε μια αναφορά με άλλη διάσταση, άλλο φίλτρο, άλλες εταιρείες ή άλλη ημερομηνία, χωρίς να ανοίξετε τις ρυθμίσεις.</div></a><a class="card" href="../kb/custom-measures.html"><div class="card-sec">📈 Προχωρημένη ανάλυση</div><div class="card-title">Εταιρικοί αθροιστές</div><div class="card-desc">Αθροιστές φτιαγμένοι ειδικά για τη δική σας εταιρεία, με τους δικούς σας κανόνες υπολογισμού. Εμφανίζονται μόνο στη δική σας εγκατάσταση.</div></a><a class="card" href="../kb/ai-assistant.html"><div class="card-sec">📈 Προχωρημένη ανάλυση</div><div class="card-title">AI Assistant: ρωτήστε την αναφορά σας</div><div class="card-desc">Μέσα σε κάθε αναφορά υπάρχει βοηθός AI. Του κάνετε ερωτήσεις σε απλά ελληνικά και απαντά με κείμενο, πίνακα ή γράφημα. Μπορεί και να σας φτιάξει νέα αναφορά.</div></a></div></section><div class="helpful">Σας βοήθησε αυτό το άρθρο; <button class="btn" data-h="yes">👍 Ναι</button><button class="btn" data-h="no">👎 Όχι</button></div><nav class="prevnext"><a class="pn prev" href="../kb/roles.html"><small>← Προηγούμενο</small>Ρόλοι και δικαιώματα</a><a class="pn next" href="../kb/technical-architecture.html"><small>Επόμενο →</small>MARS — Δεδομένα και πρόσβαση (για IT)</a></nav></article></main>
+<aside class="toc"><div class="toc-title">Σε αυτή τη σελίδα</div><a class="toc-l2" href="#s1">Τι κάνει</a><a class="toc-l2" href="#s2">1. Εγκαταστάσεις</a><a class="toc-l2" href="#s3">2. Χρήστες</a><a class="toc-l2" href="#s4">3. Δικαιώματα αθροιστών και αυτόματα φίλτρα (data fencing)</a><a class="toc-l2" href="#s5">4. Groups διαστάσεων και φίλτρων</a><a class="toc-l2" href="#s6">5. Αναφορές Συστήματος</a><a class="toc-l2" href="#s7">6. Διαστάσεις, περίοδοι και εταιρικοί αθροιστές</a><a class="toc-l2" href="#s8">7. Προβολή ως άλλος χρήστης</a><a class="toc-l2" href="#s9">8. Ρυθμίσεις AI</a><a class="toc-l2" href="#s10">Συμβουλές και συχνά λάθη</a></aside>
+</div>
+<footer class="footer"><div>© 2026 Datalink · M.A.R.S. (My Advanced Reporting System)</div>
+<div><a href="#" onclick="MARSConsent.reset();return false">Ρυθμίσεις cookies</a></div></footer>
+<div id="consent" class="consent" hidden>
+  <div><strong>Cookies</strong><p>Χρησιμοποιούμε Google Analytics για να βλέπουμε ποια άρθρα βοηθούν. Φορτώνεται μόνο με τη συγκατάθεσή σας.</p></div>
+  <div class="consent-btns"><button class="btn" data-c="no">Απόρριψη</button><button class="btn btn-primary" data-c="yes">Αποδοχή</button></div>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>

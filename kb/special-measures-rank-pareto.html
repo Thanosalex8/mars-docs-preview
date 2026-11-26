@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="el">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ειδικοί αθροιστές: Θέση, Ποσοστό, Pareto | M.A.R.S. Wiki</title>
+<meta name="description" content="Με ένα γράμμα μετά τον αθροιστή, μια στήλη δείχνει κατάταξη, ποσοστό επί του συνόλου, προοδευτικό άθροισμα ή ανάλυση Pareto 80-20.">
+<link rel="canonical" href="https://mars.datalink.com.gr/docs/kb/special-measures-rank-pareto.html">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="M.A.R.S. Wiki">
+<meta property="og:title" content="Ειδικοί αθροιστές: Θέση, Ποσοστό, Pareto">
+<meta property="og:description" content="Με ένα γράμμα μετά τον αθροιστή, μια στήλη δείχνει κατάταξη, ποσοστό επί του συνόλου, προοδευτικό άθροισμα ή ανάλυση Pareto 80-20.">
+<meta property="og:url" content="https://mars.datalink.com.gr/docs/kb/special-measures-rank-pareto.html">
+<meta property="og:locale" content="el_GR">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Ειδικοί αθροιστές: Θέση, Ποσοστό, Pareto", "description": "Με ένα γράμμα μετά τον αθροιστή, μια στήλη δείχνει κατάταξη, ποσοστό επί του συνόλου, προοδευτικό άθροισμα ή ανάλυση Pareto 80-20.", "inLanguage": "el", "dateModified": "2026-11-26", "author": {"@type": "Organization", "name": "Datalink"}, "publisher": {"@type": "Organization", "name": "Datalink"}, "mainEntityOfPage": "https://mars.datalink.com.gr/docs/kb/special-measures-rank-pareto.html"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Αρχική", "item": "https://mars.datalink.com.gr/docs/index.html"}, {"@type": "ListItem", "position": 2, "name": "Γνωσιακή βάση", "item": "https://mars.datalink.com.gr/docs/kb/index.html"}, {"@type": "ListItem", "position": 3, "name": "Ειδικοί αθροιστές: Θέση, Ποσοστό, Pareto", "item": "https://mars.datalink.com.gr/docs/kb/special-measures-rank-pareto.html"}]}</script>
+<script>window.MARS={prefix:"../",ga:""};</script>
+</head>
+<body>
+<a class="skip" href="#main">Μετάβαση στο περιεχόμενο</a>
+<header class="topbar">
+  <button class="burger" aria-label="Μενού" onclick="document.body.classList.toggle('nav-open')">☰</button>
+  <a class="brand" href="../index.html"><span class="logo">M</span><span>M.A.R.S. <small>Wiki</small></span></a>
+  <nav class="tabs"><a class="tab" href="../index.html">Αρχική</a><a class="tab active" href="../kb/index.html">Γνωσιακή βάση</a><a class="tab" href="../manual/index.html">Εγχειρίδιο</a><a class="tab" href="../presentation/index.html">Παρουσίαση</a></nav>
+  <div class="search">
+    <input id="q" type="search" placeholder="Αναζήτηση στο MARS…" autocomplete="off" aria-label="Αναζήτηση">
+    <kbd>⌘K</kbd>
+    <div id="results" class="results" role="listbox"></div>
+  </div>
+</header>
+<div class="layout has-sidebar has-toc">
+<aside class="sidebar"><a class="side-home" href="../kb/index.html">📚 Γνωσιακή βάση</a><details><summary>🚀 Πρώτα βήματα</summary><a class="" href="../kb/getting-started.html">Ξεκινώντας με το MARS</a><a class="" href="../kb/concepts.html">Βασικές έννοιες: διαστάσεις, αθροιστές, περίοδοι, φίλτρα</a><a class="" href="../kb/glossary.html">Γλωσσάρι του MARS</a></details><details><summary>🛠️ Φτιάχνω αναφορές</summary><a class="" href="../kb/create-report.html">Δημιουργία αναφοράς</a><a class="" href="../kb/quick-options.html">Γρήγορες επιλογές</a><a class="" href="../kb/dimensions.html">Διαστάσεις</a><a class="" href="../kb/measures.html">Αθροιστές</a><a class="" href="../kb/date-periods.html">Περίοδοι και δυναμικά χρονικά διαστήματα</a><a class="" href="../kb/reference-date.html">Οριακή ημερομηνία: η αναφορά όπως θα ήταν μια άλλη μέρα</a><a class="" href="../kb/column-filters.html">Φίλτρα ανά στήλη</a></details><details open><summary>📈 Προχωρημένη ανάλυση</summary><a class="current" href="../kb/special-measures-rank-pareto.html">Ειδικοί αθροιστές: Θέση, Ποσοστό, Pareto</a><a class="" href="../kb/calculated-columns.html">Υπολογισμένες στήλες</a><a class="" href="../kb/custom-measures.html">Εταιρικοί αθροιστές</a><a class="" href="../kb/custom-dimensions.html">Εταιρικές διαστάσεις</a><a class="" href="../kb/ai-assistant.html">AI Assistant: ρωτήστε την αναφορά σας</a></details><details><summary>📊 Δουλεύω με τα αποτελέσματα</summary><a class="" href="../kb/numeric-filters-sorting.html">Αριθμητικά φίλτρα και ταξινόμηση</a><a class="" href="../kb/drill-down.html">Drill-down: από τη σύνοψη στη λεπτομέρεια</a><a class="" href="../kb/export-print.html">Εξαγωγή και εκτύπωση</a><a class="" href="../kb/bookmarks-mobile.html">Σύνδεσμοι, σελιδοδείκτες και κινητό</a></details><details><summary>🗂️ Οργάνωση και ιστορικό</summary><a class="" href="../kb/system-reports.html">Αναφορές Συστήματος</a><a class="" href="../kb/archiving-categories.html">Αρχειοθέτηση και κατηγορίες αναφορών</a><a class="" href="../kb/historical-reports.html">Ιστορικές αναφορές</a></details><details><summary>💡 Σενάρια και απαντήσεις</summary><a class="" href="../kb/use-cases.html">Έτοιμα σενάρια: 10 αναφορές βήμα βήμα</a><a class="" href="../kb/faq.html">Συχνές ερωτήσεις</a></details><details><summary>🔐 Για διαχειριστές</summary><a class="" href="../kb/roles.html">Ρόλοι και δικαιώματα</a><a class="" href="../kb/admin-guide.html">Οδηγός διαχειριστή</a></details><details><summary>🧩 Για συνεργάτες και IT</summary><a class="" href="../kb/technical-architecture.html">MARS — Δεδομένα και πρόσβαση (για IT)</a></details></aside>
+<main id="main"><nav class="crumbs" aria-label="Διαδρομή"><a href="../index.html">Αρχική</a> <span>›</span> <a href="../kb/index.html">Γνωσιακή βάση</a></nav><article class="doc"><h1>Ειδικοί αθροιστές: Θέση, Ποσοστό, Pareto</h1><div class="meta"><span>⏱ 3 λεπτά ανάγνωση</span><span>Κεφάλαιο 11 από 27</span><span>Ενημέρωση 26/11/2026</span></div><p class="lead">Με ένα γράμμα μετά τον αθροιστή, μια στήλη δείχνει κατάταξη, ποσοστό επί του συνόλου, προοδευτικό άθροισμα ή ανάλυση Pareto 80-20.</p><h2 id="s1">Τι κάνει<a class="anchor" href="#s1" aria-label="Σύνδεσμος ενότητας">#</a></h2>
+<p>Σε κάθε στήλη γράφετε ποιον αθροιστή θα δείχνει, π.χ. <code>a1</code>. Αν προσθέσετε ένα γράμμα, παίρνετε έναν ειδικό υπολογισμό πάνω στον ίδιο αθροιστή:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Γράφετε</th>
+<th>Τι δείχνει</th>
+<th>Η επικεφαλίδα γράφει</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>a1</code></td>
+<td>Την τιμή</td>
+<td>… (a1)</td>
+</tr>
+<tr>
+<td><code>a1t</code></td>
+<td><strong>Θέση</strong>: 1 για τη μεγαλύτερη τιμή, 2 για την επόμενη κ.λπ.</td>
+<td>… (Θέση-a1)</td>
+</tr>
+<tr>
+<td><code>a1p</code></td>
+<td><strong>Ποσοστό επί του συνόλου</strong> της στήλης</td>
+<td>… (%Συνόλου-a1)</td>
+</tr>
+<tr>
+<td><code>a1c</code></td>
+<td><strong>Προοδευτικό άθροισμα</strong>, από την πρώτη γραμμή έως την τρέχουσα</td>
+<td>… (Προοδευτικό άθροισμα-a1)</td>
+</tr>
+<tr>
+<td><code>a1x</code></td>
+<td><strong>Προοδευτική ποσοστιαία συμμετοχή</strong>: το προοδευτικό άθροισμα ως % του συνόλου (Pareto)</td>
+<td>… (Προοδευτική %Συμμετοχη-a1)</td>
+</tr>
+<tr>
+<td><code>a1z</code></td>
+<td><strong>Επανάληψη Συνόλου</strong>: το σύνολο της στήλης σε κάθε γραμμή</td>
+<td>… (Επανάληψη Συνόλου-a1)</td>
+</tr>
+</tbody>
+</table></div>
+<p>Το ίδιο ισχύει για όλους τους αθροιστές: <code>a2t</code>, <code>a3p</code>, <code>a0x</code> κ.λπ.</p>
+<h2 id="s2">Πότε το χρησιμοποιώ<a class="anchor" href="#s2" aria-label="Σύνδεσμος ενότητας">#</a></h2>
+<ul>
+<li><strong>Αλλαγή κατάταξης πελατών:</strong> a1 = τζίρος φέτος, a2 = τζίρος πέρυσι. Στήλες <code>a1t</code> και <code>a2t</code>. Βλέπετε ότι ένας πελάτης έπεσε από την 5η στην 8η θέση.</li>
+<li><strong>Pareto 80-20:</strong> ταξινόμηση <strong>Στήλη 1 Max-&gt;Min</strong> και στήλη <code>a1x</code>. Οι πελάτες μέχρι το 80% είναι αυτοί που φέρνουν τα 4/5 του τζίρου.</li>
+<li><strong>Μερίδιο κατηγορίας:</strong> διάσταση εμπορική κατηγορία, στήλη <code>a1p</code>. Βλέπετε τι ποσοστό των πωλήσεων είναι κάθε κατηγορία.</li>
+</ul>
+<h2 id="s3">Βήματα<a class="anchor" href="#s3" aria-label="Σύνδεσμος ενότητας">#</a></h2>
+<ol>
+<li>Στις ρυθμίσεις, στη <strong>Διάσταση 1</strong> διαλέξτε τι θα βγαίνει στις γραμμές (π.χ. <strong>Κωδικοί - Περιγραφές Υλικών(mtrl)</strong> για τα είδη).</li>
+<li>Βάλτε τον αθροιστή σε μία θέση (π.χ. <strong>Αθροιστής (a1)</strong>) με την περίοδό του.</li>
+<li>Στην ενότητα <strong>Στήλες</strong>, στο πεδίο <strong>Επιλέξτε αθροιστή/πράξη</strong> μιας στήλης, γράψτε π.χ. <code>a1t</code>.</li>
+<li>Από τη λίστα κάτω από το πεδίο διαλέξτε μορφή: <strong>Θέση</strong> για <code>t</code>, <strong>Ποσοστό</strong> για <code>p</code> και <code>x</code>, <strong>Αξία</strong> για <code>c</code> και <code>z</code>.</li>
+<li>Για Pareto και προοδευτικά, ορίστε ταξινόμηση στη διάσταση (π.χ. <strong>Στήλη 1 Max-&gt;Min</strong>), ώστε η σειρά να έχει νόημα.</li>
+<li>Πατήστε <strong>Εμφάνιση Αναφοράς</strong>.</li>
+</ol>
+<figure class="shot"><img src="../media/shots/S27.png" alt="Ρυθμίσεις (πάνω) και αποτέλεσμα (κάτω) με όλους τους ειδικούς αθροιστές" loading="lazy"><figcaption>Ρυθμίσεις (πάνω) και αποτέλεσμα (κάτω) με όλους τους ειδικούς αθροιστές</figcaption></figure>
+<h2 id="s4">Συμβουλές και συχνά λάθη<a class="anchor" href="#s4" aria-label="Σύνδεσμος ενότητας">#</a></h2>
+<ul>
+<li><strong>Η Θέση μετρά από τη μεγαλύτερη τιμή.</strong> Ο πελάτης με τον μεγαλύτερο τζίρο είναι 1ος.</li>
+<li><strong>Για τη διαφορά θέσεων</strong> γράψτε σε άλλη στήλη <code>a2t-a1t</code> και διαλέξτε μορφή <strong>Διαφορά Θέσεων</strong>. Θετικός αριθμός σημαίνει ότι ο πελάτης ανέβηκε.</li>
+<li><strong>Τα προοδευτικά ακολουθούν την ταξινόμηση της διάστασης.</strong> Αν η σειρά είναι αλφαβητική, το Pareto δεν βγάζει νόημα.</li>
+<li><strong>Με 2η διάσταση,</strong> Θέση, ποσοστά και προοδευτικά υπολογίζονται και μέσα σε κάθε ομάδα της 1ης. Π.χ. η θέση κάθε πελάτη μέσα στους πελάτες του πωλητή του.</li>
+<li><strong>Στη γραμμή «Σύνολα»</strong> δεν εμφανίζεται άθροισμα για Θέση, Ποσοστό και Προοδευτική %, γιατί δεν θα είχε νόημα.</li>
+<li><strong>Τα ελληνικά γράμματα</strong> (α, τ, π, χ) μετατρέπονται αυτόματα στα σωστά λατινικά.</li>
+</ul><section class="related"><h2>Σχετικά άρθρα</h2><div class="cards"><a class="card" href="../kb/calculated-columns.html"><div class="card-sec">📈 Προχωρημένη ανάλυση</div><div class="card-title">Υπολογισμένες στήλες</div><div class="card-desc">Μια στήλη μπορεί να δείχνει πράξη ανάμεσα σε αθροιστές: διαφορά, ποσοστό μεταβολής, μέση τιμή και ό,τι άλλο χρειάζεστε.</div></a><a class="card" href="../kb/numeric-filters-sorting.html"><div class="card-sec">📊 Δουλεύω με τα αποτελέσματα</div><div class="card-title">Αριθμητικά φίλτρα και ταξινόμηση</div><div class="card-desc">Κρατήστε μόνο τις γραμμές που σας ενδιαφέρουν (π.χ. τζίρος πάνω από 1.000) και ταξινομήστε με ένα κλικ, είτε στα αποτελέσματα είτε μόνιμα από τις ρυθμίσεις.</div></a><a class="card" href="../kb/use-cases.html"><div class="card-sec">💡 Σενάρια και απαντήσεις</div><div class="card-title">Έτοιμα σενάρια: 10 αναφορές βήμα βήμα</div><div class="card-desc">Δέκα συνηθισμένες επιχειρησιακές ερωτήσεις και πώς στήνεται η αναφορά που τις απαντά.</div></a></div></section><div class="helpful">Σας βοήθησε αυτό το άρθρο; <button class="btn" data-h="yes">👍 Ναι</button><button class="btn" data-h="no">👎 Όχι</button></div><nav class="prevnext"><a class="pn prev" href="../kb/column-filters.html"><small>← Προηγούμενο</small>Φίλτρα ανά στήλη</a><a class="pn next" href="../kb/calculated-columns.html"><small>Επόμενο →</small>Υπολογισμένες στήλες</a></nav></article></main>
+<aside class="toc"><div class="toc-title">Σε αυτή τη σελίδα</div><a class="toc-l2" href="#s1">Τι κάνει</a><a class="toc-l2" href="#s2">Πότε το χρησιμοποιώ</a><a class="toc-l2" href="#s3">Βήματα</a><a class="toc-l2" href="#s4">Συμβουλές και συχνά λάθη</a></aside>
+</div>
+<footer class="footer"><div>© 2026 Datalink · M.A.R.S. (My Advanced Reporting System)</div>
+<div><a href="#" onclick="MARSConsent.reset();return false">Ρυθμίσεις cookies</a></div></footer>
+<div id="consent" class="consent" hidden>
+  <div><strong>Cookies</strong><p>Χρησιμοποιούμε Google Analytics για να βλέπουμε ποια άρθρα βοηθούν. Φορτώνεται μόνο με τη συγκατάθεσή σας.</p></div>
+  <div class="consent-btns"><button class="btn" data-c="no">Απόρριψη</button><button class="btn btn-primary" data-c="yes">Αποδοχή</button></div>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>

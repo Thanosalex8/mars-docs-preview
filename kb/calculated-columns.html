@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="el">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Υπολογισμένες στήλες | M.A.R.S. Wiki</title>
+<meta name="description" content="Μια στήλη μπορεί να δείχνει πράξη ανάμεσα σε αθροιστές: διαφορά, ποσοστό μεταβολής, μέση τιμή και ό,τι άλλο χρειάζεστε.">
+<link rel="canonical" href="https://mars.datalink.com.gr/docs/kb/calculated-columns.html">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="M.A.R.S. Wiki">
+<meta property="og:title" content="Υπολογισμένες στήλες">
+<meta property="og:description" content="Μια στήλη μπορεί να δείχνει πράξη ανάμεσα σε αθροιστές: διαφορά, ποσοστό μεταβολής, μέση τιμή και ό,τι άλλο χρειάζεστε.">
+<meta property="og:url" content="https://mars.datalink.com.gr/docs/kb/calculated-columns.html">
+<meta property="og:locale" content="el_GR">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Υπολογισμένες στήλες", "description": "Μια στήλη μπορεί να δείχνει πράξη ανάμεσα σε αθροιστές: διαφορά, ποσοστό μεταβολής, μέση τιμή και ό,τι άλλο χρειάζεστε.", "inLanguage": "el", "dateModified": "2026-11-26", "author": {"@type": "Organization", "name": "Datalink"}, "publisher": {"@type": "Organization", "name": "Datalink"}, "mainEntityOfPage": "https://mars.datalink.com.gr/docs/kb/calculated-columns.html"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Αρχική", "item": "https://mars.datalink.com.gr/docs/index.html"}, {"@type": "ListItem", "position": 2, "name": "Γνωσιακή βάση", "item": "https://mars.datalink.com.gr/docs/kb/index.html"}, {"@type": "ListItem", "position": 3, "name": "Υπολογισμένες στήλες", "item": "https://mars.datalink.com.gr/docs/kb/calculated-columns.html"}]}</script>
+<script>window.MARS={prefix:"../",ga:""};</script>
+</head>
+<body>
+<a class="skip" href="#main">Μετάβαση στο περιεχόμενο</a>
+<header class="topbar">
+  <button class="burger" aria-label="Μενού" onclick="document.body.classList.toggle('nav-open')">☰</button>
+  <a class="brand" href="../index.html"><span class="logo">M</span><span>M.A.R.S. <small>Wiki</small></span></a>
+  <nav class="tabs"><a class="tab" href="../index.html">Αρχική</a><a class="tab active" href="../kb/index.html">Γνωσιακή βάση</a><a class="tab" href="../manual/index.html">Εγχειρίδιο</a><a class="tab" href="../presentation/index.html">Παρουσίαση</a></nav>
+  <div class="search">
+    <input id="q" type="search" placeholder="Αναζήτηση στο MARS…" autocomplete="off" aria-label="Αναζήτηση">
+    <kbd>⌘K</kbd>
+    <div id="results" class="results" role="listbox"></div>
+  </div>
+</header>
+<div class="layout has-sidebar has-toc">
+<aside class="sidebar"><a class="side-home" href="../kb/index.html">📚 Γνωσιακή βάση</a><details><summary>🚀 Πρώτα βήματα</summary><a class="" href="../kb/getting-started.html">Ξεκινώντας με το MARS</a><a class="" href="../kb/concepts.html">Βασικές έννοιες: διαστάσεις, αθροιστές, περίοδοι, φίλτρα</a><a class="" href="../kb/glossary.html">Γλωσσάρι του MARS</a></details><details><summary>🛠️ Φτιάχνω αναφορές</summary><a class="" href="../kb/create-report.html">Δημιουργία αναφοράς</a><a class="" href="../kb/quick-options.html">Γρήγορες επιλογές</a><a class="" href="../kb/dimensions.html">Διαστάσεις</a><a class="" href="../kb/measures.html">Αθροιστές</a><a class="" href="../kb/date-periods.html">Περίοδοι και δυναμικά χρονικά διαστήματα</a><a class="" href="../kb/reference-date.html">Οριακή ημερομηνία: η αναφορά όπως θα ήταν μια άλλη μέρα</a><a class="" href="../kb/column-filters.html">Φίλτρα ανά στήλη</a></details><details open><summary>📈 Προχωρημένη ανάλυση</summary><a class="" href="../kb/special-measures-rank-pareto.html">Ειδικοί αθροιστές: Θέση, Ποσοστό, Pareto</a><a class="current" href="../kb/calculated-columns.html">Υπολογισμένες στήλες</a><a class="" href="../kb/custom-measures.html">Εταιρικοί αθροιστές</a><a class="" href="../kb/custom-dimensions.html">Εταιρικές διαστάσεις</a><a class="" href="../kb/ai-assistant.html">AI Assistant: ρωτήστε την αναφορά σας</a></details><details><summary>📊 Δουλεύω με τα αποτελέσματα</summary><a class="" href="../kb/numeric-filters-sorting.html">Αριθμητικά φίλτρα και ταξινόμηση</a><a class="" href="../kb/drill-down.html">Drill-down: από τη σύνοψη στη λεπτομέρεια</a><a class="" href="../kb/export-print.html">Εξαγωγή και εκτύπωση</a><a class="" href="../kb/bookmarks-mobile.html">Σύνδεσμοι, σελιδοδείκτες και κινητό</a></details><details><summary>🗂️ Οργάνωση και ιστορικό</summary><a class="" href="../kb/system-reports.html">Αναφορές Συστήματος</a><a class="" href="../kb/archiving-categories.html">Αρχειοθέτηση και κατηγορίες αναφορών</a><a class="" href="../kb/historical-reports.html">Ιστορικές αναφορές</a></details><details><summary>💡 Σενάρια και απαντήσεις</summary><a class="" href="../kb/use-cases.html">Έτοιμα σενάρια: 10 αναφορές βήμα βήμα</a><a class="" href="../kb/faq.html">Συχνές ερωτήσεις</a></details><details><summary>🔐 Για διαχειριστές</summary><a class="" href="../kb/roles.html">Ρόλοι και δικαιώματα</a><a class="" href="../kb/admin-guide.html">Οδηγός διαχειριστή</a></details><details><summary>🧩 Για συνεργάτες και IT</summary><a class="" href="../kb/technical-architecture.html">MARS — Δεδομένα και πρόσβαση (για IT)</a></details></aside>
+<main id="main"><nav class="crumbs" aria-label="Διαδρομή"><a href="../index.html">Αρχική</a> <span>›</span> <a href="../kb/index.html">Γνωσιακή βάση</a></nav><article class="doc"><h1>Υπολογισμένες στήλες</h1><div class="meta"><span>⏱ 2 λεπτά ανάγνωση</span><span>Κεφάλαιο 12 από 27</span><span>Ενημέρωση 26/11/2026</span></div><p class="lead">Μια στήλη μπορεί να δείχνει πράξη ανάμεσα σε αθροιστές: διαφορά, ποσοστό μεταβολής, μέση τιμή και ό,τι άλλο χρειάζεστε.</p><h2 id="s1">Τι κάνει<a class="anchor" href="#s1" aria-label="Σύνδεσμος ενότητας">#</a></h2>
+<p>Στο πεδίο <strong>Επιλέξτε αθροιστή/πράξη</strong> κάθε στήλης δεν γράφετε μόνο <code>a1</code>. Γράφετε και πράξεις με τους αθροιστές a1 … a0, με τα σύμβολα <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code> και παρενθέσεις. Το MARS κάνει τον υπολογισμό για κάθε γραμμή και για τα σύνολα.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Θέλετε</th>
+<th>Γράφετε</th>
+<th>Μορφή</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Διαφορά φέτος - πέρυσι</td>
+<td><code>a1-a2</code></td>
+<td>Διαφορά Αξιών</td>
+</tr>
+<tr>
+<td>Ποσοστό μεταβολής</td>
+<td><code>(a1-a2)/(a2)*100</code></td>
+<td>Διαφορά Ποσοστών</td>
+</tr>
+<tr>
+<td>Μέση τιμή μονάδας (αξία / ποσότητα)</td>
+<td><code>a1/(a3)</code></td>
+<td>Αξία</td>
+</tr>
+<tr>
+<td>Απόλυτη διαφορά (χωρίς πρόσημο)</td>
+<td><code>abs[a1-a2]</code></td>
+<td>Διαφορά Αξιών</td>
+</tr>
+<tr>
+<td>Σύνολο χωρίς ένα μέρος</td>
+<td><code>a1-a2</code> (a2 = ίδιος αθροιστής με φίλτρο στο μέρος που αφαιρείτε)</td>
+<td>Αξία</td>
+</tr>
+<tr>
+<td>Ποσοστό γραμμής επί του συνόλου με πράξη</td>
+<td><code>a1/(a1z)*100</code></td>
+<td>Ποσοστό</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="s2">Πότε το χρησιμοποιώ<a class="anchor" href="#s2" aria-label="Σύνδεσμος ενότητας">#</a></h2>
+<p>Ο οικονομικός διευθυντής θέλει, ανά πελάτη, τζίρο φέτος, τζίρο πέρυσι και ποσοστό μεταβολής, ώστε να εντοπίσει όσους πέφτουν πάνω από 20%. Με τρεις στήλες (<code>a1</code>, <code>a2</code>, <code>(a1-a2)/(a2)*100</code>) και μία συνθήκη γραμμών το έχει σε μία αναφορά.</p>
+<h2 id="s3">Βήματα<a class="anchor" href="#s3" aria-label="Σύνδεσμος ενότητας">#</a></h2>
+<ol>
+<li>Ορίστε πρώτα τους αθροιστές που χρειάζεστε στις θέσεις a1, a2 κ.λπ., με τις περιόδους τους.</li>
+<li>
+<p>Στην ενότητα <strong>Στήλες</strong>, στο πεδίο <strong>Επιλέξτε αθροιστή/πράξη</strong> της στήλης, γράψτε την πράξη, π.χ. <code>(a1-a2)/(a2)*100</code>.</p>
+<figure class="shot"><img src="../media/shots/S43.png" alt="Πεδία στήλης με αθροιστή ή πράξη (a1, a2, a1-a2, ποσοστό μεταβολής)" loading="lazy"><figcaption>Πεδία στήλης με αθροιστή ή πράξη (a1, a2, a1-a2, ποσοστό μεταβολής)</figcaption></figure>
+</li>
+<li>
+<p>Από τη λίστα κάτω από το πεδίο διαλέξτε μορφή: <strong>Αξία</strong>, <strong>Διαφορά Αξιών</strong>, <strong>Ποσοστό</strong>, <strong>Διαφορά Ποσοστών</strong>, <strong>Θέση</strong>, <strong>Διαφορά Θέσεων</strong>, <strong>Ποσότητες</strong>, <strong>Διαφορά Ποσοτήτων</strong>.</p>
+<figure class="shot"><img src="../media/shots/S44.png" alt="Ανοιχτή λίστα μορφής στήλης (Αξία, Διαφορά Αξιών, Ποσοστό …)" loading="lazy"><figcaption>Ανοιχτή λίστα μορφής στήλης (Αξία, Διαφορά Αξιών, Ποσοστό …)</figcaption></figure>
+</li>
+<li>
+<p>Πατήστε <strong>Εμφάνιση Αναφοράς</strong>.</p>
+</li>
+</ol>
+<figure class="shot"><img src="../media/shots/S23.png" alt="Ενότητα «Στήλες» με τύπους (a1, a2, a1-a2, 100*(a1-a2)/abs[a2])" loading="lazy"><figcaption>Ενότητα «Στήλες» με τύπους (a1, a2, a1-a2, 100*(a1-a2)/abs[a2])</figcaption></figure>
+<h2 id="s4">Συμβουλές και συχνά λάθη<a class="anchor" href="#s4" aria-label="Σύνδεσμος ενότητας">#</a></h2>
+<ul>
+<li><strong>Διαίρεση με το μηδέν: βάζετε πάντα τον παρονομαστή σε παρένθεση,</strong> π.χ. <code>a1/(a2)</code> και όχι <code>a1/a2</code>. Ό,τι είναι μέσα σε παρένθεση το MARS το προστατεύει: αν βγει μηδέν, η στήλη μένει κενή σε εκείνη τη γραμμή αντί να βγει σφάλμα. Το ίδιο ισχύει και για τον αριθμητή, οπότε μια παρένθεση που βγαίνει μηδέν δίνει κενό αντί για 0.</li>
+<li><strong>Για απόλυτη τιμή</strong> χρησιμοποιήστε αγκύλες: <code>abs[ … ]</code>.</li>
+<li><strong>Ο αθροιστής πρέπει να υπάρχει.</strong> Αν γράψετε <code>a3</code> και η θέση a3 είναι άδεια, η στήλη θα βγει κενή ή μηδέν.</li>
+<li><strong>Η επικεφαλίδα</strong> μιας υπολογισμένης στήλης γράφει την πράξη και «Υπολογισμός Στηλών».</li>
+<li><strong>Ελληνικά γράμματα:</strong> αν γράψετε «α1-α2», μετατρέπεται μόνο του σε «a1-a2».</li>
+<li><strong>Ειδικοί αθροιστές μέσα σε πράξεις:</strong> μπορείτε να γράψετε π.χ. <code>a2t-a1t</code> για τη διαφορά θέσεων.</li>
+</ul><section class="related"><h2>Σχετικά άρθρα</h2><div class="cards"><a class="card" href="../kb/special-measures-rank-pareto.html"><div class="card-sec">📈 Προχωρημένη ανάλυση</div><div class="card-title">Ειδικοί αθροιστές: Θέση, Ποσοστό, Pareto</div><div class="card-desc">Με ένα γράμμα μετά τον αθροιστή, μια στήλη δείχνει κατάταξη, ποσοστό επί του συνόλου, προοδευτικό άθροισμα ή ανάλυση Pareto 80-20.</div></a><a class="card" href="../kb/measures.html"><div class="card-sec">🛠️ Φτιάχνω αναφορές</div><div class="card-title">Αθροιστές</div><div class="card-desc">Οι αθροιστές είναι τα νούμερα της αναφοράς. Βάζετε έως 10, ο καθένας με δική του περίοδο.</div></a><a class="card" href="../kb/numeric-filters-sorting.html"><div class="card-sec">📊 Δουλεύω με τα αποτελέσματα</div><div class="card-title">Αριθμητικά φίλτρα και ταξινόμηση</div><div class="card-desc">Κρατήστε μόνο τις γραμμές που σας ενδιαφέρουν (π.χ. τζίρος πάνω από 1.000) και ταξινομήστε με ένα κλικ, είτε στα αποτελέσματα είτε μόνιμα από τις ρυθμίσεις.</div></a><a class="card" href="../kb/column-filters.html"><div class="card-sec">🛠️ Φτιάχνω αναφορές</div><div class="card-title">Φίλτρα ανά στήλη</div><div class="card-desc">Κάθε φίλτρο το εφαρμόζετε μόνο στις στήλες που θέλετε. Έτσι στην ίδια αναφορά συγκρίνετε, για παράδειγμα, τις συνολικές πωλήσεις ενός πωλητή με τις πωλήσεις μιας συγκεκριμένης κατηγορίας.</div></a></div></section><div class="helpful">Σας βοήθησε αυτό το άρθρο; <button class="btn" data-h="yes">👍 Ναι</button><button class="btn" data-h="no">👎 Όχι</button></div><nav class="prevnext"><a class="pn prev" href="../kb/special-measures-rank-pareto.html"><small>← Προηγούμενο</small>Ειδικοί αθροιστές: Θέση, Ποσοστό, Pareto</a><a class="pn next" href="../kb/custom-measures.html"><small>Επόμενο →</small>Εταιρικοί αθροιστές</a></nav></article></main>
+<aside class="toc"><div class="toc-title">Σε αυτή τη σελίδα</div><a class="toc-l2" href="#s1">Τι κάνει</a><a class="toc-l2" href="#s2">Πότε το χρησιμοποιώ</a><a class="toc-l2" href="#s3">Βήματα</a><a class="toc-l2" href="#s4">Συμβουλές και συχνά λάθη</a></aside>
+</div>
+<footer class="footer"><div>© 2026 Datalink · M.A.R.S. (My Advanced Reporting System)</div>
+<div><a href="#" onclick="MARSConsent.reset();return false">Ρυθμίσεις cookies</a></div></footer>
+<div id="consent" class="consent" hidden>
+  <div><strong>Cookies</strong><p>Χρησιμοποιούμε Google Analytics για να βλέπουμε ποια άρθρα βοηθούν. Φορτώνεται μόνο με τη συγκατάθεσή σας.</p></div>
+  <div class="consent-btns"><button class="btn" data-c="no">Απόρριψη</button><button class="btn btn-primary" data-c="yes">Αποδοχή</button></div>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>
